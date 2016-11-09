@@ -1,0 +1,25 @@
+{
+	"name": "mstrouhal/query-filter",
+	"description": "URL Query filters for REST APIs",
+	"type": "library",
+	"require": {
+		"php": ">=7.0.0",
+		"nette/utils": "^2.4",
+		"nette/http": "^2.4"
+	},
+	"require-dev": {
+		"nette/tester": "^1.7"
+	},
+	"license": [
+		"BSD-3-Clause",
+		"GPL-2.0",
+		"GPL-3.0"
+	],
+	"authors": [
+		{
+			"name": "mstrouhal",
+			"email": "martin@martinstrouhal.cz"
+		}
+	],
+	"minimum-stability": "dev"
+}

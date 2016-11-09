@@ -1,0 +1,9 @@
+machine:
+  services:
+  php:
+    version: 7.0.0
+dependencies:
+  pre:
+test:
+  override:
+    - vendor/bin/tester -p php tests --coverage=$CIRCLE_ARTIFACTS/coverage.xml --coverage-src=src
