@@ -1,7 +1,7 @@
 machine:
   services:
   php:
-    version: 7.0.0
+    version: 7.0.4
 dependencies:
   pre:
 test:
