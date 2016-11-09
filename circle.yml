@@ -7,3 +7,5 @@ dependencies:
 test:
   override:
     - vendor/bin/tester -p php tests --coverage=$CIRCLE_ARTIFACTS/coverage.xml --coverage-src=src
+  post:
+    - bash <(curl -s https://codecov.io/bash)
