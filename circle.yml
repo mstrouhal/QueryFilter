@@ -6,6 +6,6 @@ dependencies:
   pre:
 test:
   override:
-    - vendor/bin/tester -p php tests --coverage=$CIRCLE_ARTIFACTS/coverage.xml --coverage-src=src
+    - vendor/bin/tester -p php -c tests/php-circleci.ini tests --coverage=$CIRCLE_ARTIFACTS/coverage.xml --coverage-src=src
   post:
     - bash <(curl -s https://codecov.io/bash)
